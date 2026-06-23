@@ -653,6 +653,70 @@ nav {
     100% { transform: scale(1); opacity: 1; }
 }
 
+
+
 .success-pop {
     animation: successPop 0.6s;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+    /* Header layout */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .logo-area {
+        position: static;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Apply Now button */
+    .apply-top-btn {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Job Spec section */
+    .job-spec-section {
+        padding: 10px;
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .job-spec-content {
+        padding: 15px;
+    }
+
+    /* Staff grid */
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* General spacing */
+    h1, h2, h3, p {
+        text-align: center;
+    }
 }
